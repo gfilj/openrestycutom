@@ -1,0 +1,2 @@
+# nginx logrotate
+59 23 * * * /usr/sbin/logrotate -f /home/appops/ngx_openresty-1.7.2.1/scripts/logrotate.conf
