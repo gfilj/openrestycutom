@@ -25,6 +25,11 @@ server {
         proxy_pass http://articlefilter;
     }
     
+    location = /test {
+	return 200 "ok";
+        #rewrite ^/ /main.html permanent;
+    }
+    
     location ~ ^/videoproxy/([^/]+)/+(.*)  {
         set $d $1;
         set $u $2;
